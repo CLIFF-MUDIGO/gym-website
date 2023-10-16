@@ -23,7 +23,7 @@ const Navbar = () => {
 
   return (
     <nav className={nav ? 'navbar active' : 'nav'}>
-      <Link to="top" className='logo'>
+      <Link to="main" className='logo'>
         <img src={logo} alt=''/>
       </Link>
       <input className='menu-btn' type='checkbox' id='menu-btn' />
@@ -31,7 +31,7 @@ const Navbar = () => {
         <span className='nav-icon'></span>
       </label>
       <ul className='menu'>
-        <li><Link to="header" spy={true} smooth={true} duration={500}>Header</Link></li>
+        <li><Link to="main" spy={true} smooth={true} duration={500}>Header</Link></li>
         <li><Link to="features" spy={true} smooth={true} duration={500}>Features</Link></li>
         <li><Link to="offer" spy={true} smooth={true} duration={500}>Offer</Link></li>
         <li><Link to="about" spy={true} smooth={true} duration={500}>About</Link></li>
